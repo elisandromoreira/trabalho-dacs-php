@@ -1,0 +1,5 @@
+CREATE USER 'bob'@'localhost' IDENTIFIED BY 'bob';
+
+GRANT ALL PRIVILEGES ON univille.* TO 'bob'@'localhost' WITH GRANT OPTION; 
+
+FLUSH PRIVILEGES;

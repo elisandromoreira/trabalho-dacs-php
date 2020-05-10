@@ -1,0 +1,12 @@
+create database univille;
+
+use univille;
+
+CREATE TABLE `contatos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `company` varchar(100) NOT NULL,
+  `phone` varchar(15) NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
