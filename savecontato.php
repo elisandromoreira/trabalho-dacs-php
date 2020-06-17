@@ -1,16 +1,18 @@
 <?php
+    include 'dbconnect.php';
+    
     $id       = $_POST['txtId'];
     $name     = $_POST['txtNome'];
     $company = $_POST['txtEmpresa'];
     $phone = $_POST['txtTelefone'];
     
+    /*
     var_dump($id);
     var_dump($name);
     var_dump($company);
     var_dump($phone);
+    */
     
-    
-    $con = mysqli_connect("localhost","bob","bob","univille");
     
     if($id == "0"){
         $insert = "insert into contatos(name, company, phone) values(?,?,?);";

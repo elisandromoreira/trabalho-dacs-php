@@ -48,12 +48,13 @@
 
 
   <?php
+      include 'dbconnect.php';
       $id=0;
       $name="";
       $company="";
       $phone="";
       
-      $con = mysqli_connect("localhost","bob","bob","univille");
+     
       if(isset($_GET['id'])){
           $select = "select * from contatos where id = ?";
           $stmt = mysqli_prepare($con, $select);
